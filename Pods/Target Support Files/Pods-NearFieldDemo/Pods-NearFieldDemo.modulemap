@@ -1,0 +1,6 @@
+framework module Pods_NearFieldDemo {
+  umbrella header "Pods-NearFieldDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
