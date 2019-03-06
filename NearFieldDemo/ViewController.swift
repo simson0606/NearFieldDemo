@@ -34,7 +34,7 @@ class ViewController: UIViewController, FriendRequestReceiver {
     }
     
     @objc func fireTimer() {
-        if refreshSwitch.isOn && nameTextField?.text != nil {
+        if refreshSwitch != nil && refreshSwitch.isOn && nameTextField?.text != nil {
             let friendRequest = FriendRequestData(dateTime: Date(), name: nameTextField.text!)
             let jsonEncoder = JSONEncoder()
             let formatter = DateFormatter()

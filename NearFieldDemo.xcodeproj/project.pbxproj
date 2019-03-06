@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		88D66477E03B3007A8F21553 /* Pods_NearFieldDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F862975A53C12B62E050E1B0 /* Pods_NearFieldDemo.framework */; };
+		F410FE76222FD7E000788446 /* ServerConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F410FE75222FD7E000788446 /* ServerConnection.swift */; };
+		F410FE78222FD8C800788446 /* CodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F410FE77222FD8C800788446 /* CodeViewController.swift */; };
+		F410FE7B222FE6D400788446 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F410FE7A222FE6D400788446 /* Dictionary.swift */; };
 		F41100D02211681100844A9E /* FriendRequestReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41100CF2211681100844A9E /* FriendRequestReceiver.swift */; };
 		F41100D32211686D00844A9E /* FriendRequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41100D22211686D00844A9E /* FriendRequestData.swift */; };
 		F41100D5221171C000844A9E /* FriendRequestValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41100D4221171C000844A9E /* FriendRequestValidator.swift */; };
@@ -19,11 +22,15 @@
 		F436376A220D7C8F00E6F006 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4363769220D7C8F00E6F006 /* Assets.xcassets */; };
 		F436376D220D7C8F00E6F006 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F436376B220D7C8F00E6F006 /* LaunchScreen.storyboard */; };
 		F4363778220D8DE300E6F006 /* QrScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4363777220D8DE300E6F006 /* QrScannerViewController.swift */; };
+		F4661340222FF4F900B8E33E /* CodeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F466133F222FF4F900B8E33E /* CodeResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		55B78BF700EC4BA108F23E72 /* Pods-NearFieldDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearFieldDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NearFieldDemo/Pods-NearFieldDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		989BF148723A9A73B6195E7E /* Pods-NearFieldDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearFieldDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-NearFieldDemo/Pods-NearFieldDemo.release.xcconfig"; sourceTree = "<group>"; };
+		F410FE75222FD7E000788446 /* ServerConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerConnection.swift; sourceTree = "<group>"; };
+		F410FE77222FD8C800788446 /* CodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeViewController.swift; sourceTree = "<group>"; };
+		F410FE7A222FE6D400788446 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		F41100CF2211681100844A9E /* FriendRequestReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequestReceiver.swift; sourceTree = "<group>"; };
 		F41100D22211686D00844A9E /* FriendRequestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequestData.swift; sourceTree = "<group>"; };
 		F41100D4221171C000844A9E /* FriendRequestValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequestValidator.swift; sourceTree = "<group>"; };
@@ -37,6 +44,7 @@
 		F436376C220D7C8F00E6F006 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F436376E220D7C8F00E6F006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4363777220D8DE300E6F006 /* QrScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrScannerViewController.swift; sourceTree = "<group>"; };
+		F466133F222FF4F900B8E33E /* CodeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeResponse.swift; sourceTree = "<group>"; };
 		F862975A53C12B62E050E1B0 /* Pods_NearFieldDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NearFieldDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -69,6 +77,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F410FE79222FE6C300788446 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F410FE7A222FE6D400788446 /* Dictionary.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		F41100CE221167EA00844A9E /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +100,8 @@
 				F41100D4221171C000844A9E /* FriendRequestValidator.swift */,
 				F41100D62211727B00844A9E /* Constants.swift */,
 				F41100D82211A94C00844A9E /* StringCryptor.swift */,
+				F410FE75222FD7E000788446 /* ServerConnection.swift */,
+				F466133F222FF4F900B8E33E /* CodeResponse.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -109,6 +127,7 @@
 		F4363761220D7C8D00E6F006 /* NearFieldDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F410FE79222FE6C300788446 /* Extensions */,
 				F41100D12211683F00844A9E /* Models */,
 				F4363774220D8D3600E6F006 /* ViewControllers */,
 				F4363762220D7C8E00E6F006 /* AppDelegate.swift */,
@@ -126,6 +145,7 @@
 				F41100CE221167EA00844A9E /* Protocol */,
 				F4363764220D7C8E00E6F006 /* ViewController.swift */,
 				F4363777220D8DE300E6F006 /* QrScannerViewController.swift */,
+				F410FE77222FD8C800788446 /* CodeViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -245,10 +265,14 @@
 				F41100D92211A94C00844A9E /* StringCryptor.swift in Sources */,
 				F41100D02211681100844A9E /* FriendRequestReceiver.swift in Sources */,
 				F4363778220D8DE300E6F006 /* QrScannerViewController.swift in Sources */,
+				F410FE78222FD8C800788446 /* CodeViewController.swift in Sources */,
+				F410FE7B222FE6D400788446 /* Dictionary.swift in Sources */,
 				F41100D32211686D00844A9E /* FriendRequestData.swift in Sources */,
 				F4363765220D7C8E00E6F006 /* ViewController.swift in Sources */,
 				F41100D72211727B00844A9E /* Constants.swift in Sources */,
 				F41100D5221171C000844A9E /* FriendRequestValidator.swift in Sources */,
+				F410FE76222FD7E000788446 /* ServerConnection.swift in Sources */,
+				F4661340222FF4F900B8E33E /* CodeResponse.swift in Sources */,
 				F4363763220D7C8E00E6F006 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
